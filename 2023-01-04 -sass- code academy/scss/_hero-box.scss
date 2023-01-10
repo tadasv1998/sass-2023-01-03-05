@@ -1,0 +1,92 @@
+.hero-box {
+    background-color: $color-black;
+    color: $color-white;
+    padding-top: 170px;
+  
+    .hero-box-content {
+      margin-left: 100px;
+      margin-right: 100px;
+  
+      @include xl {
+        margin-left: 50px;
+        margin-right: 50px;
+      }
+      @include lg {
+        margin-left: 0;
+        margin-right: 0;
+      }
+  
+      .hero-box-title-wrapper {
+        max-width: 670px;
+        padding-bottom: 386px;
+  
+        .page-title {
+          font-size: 100px;
+          margin-top: 0;
+          margin-bottom: 23px;
+  
+          @include lg {
+           font-size: 70px;
+          }
+          @include sm {
+            font-size: 50px;
+           }
+  
+          p.page-description {
+            font-size: 17px;
+            max-width: 370px;
+          }
+        }
+      }
+  
+      .service-list {
+        padding-bottom: 20px;
+        display: flex;
+  
+        @include md {
+          flex-wrap: wrap;
+        }
+  
+        .service-item {
+          margin-bottom: 74px;
+          width: 50%;
+  
+          @include md {
+            width: 100%;
+          }
+  
+          &:first-child {
+            padding-right: 115px;
+  
+            @include xl {
+              padding-right: 70px;
+            }
+            @include lg {
+              padding-right: 40px;
+            }
+            @include md {
+             padding-right: 0;
+            }
+  
+          }
+          &:last-child {
+  
+            @include xl {
+              padding-right: 70px;
+            }
+            @include lg {
+              padding-left: 40px;
+            }
+            @include md {
+              padding-left: 0;
+              border-left: 0;
+             }
+  
+          }
+          p {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }

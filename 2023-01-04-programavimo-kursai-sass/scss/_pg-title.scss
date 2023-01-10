@@ -1,0 +1,29 @@
+.page-title-wrapper {
+    margin-bottom: 30px;
+
+    .bg-image {
+        display: flex;
+        column-gap: 10px;
+        text-decoration: none;
+        font-size: 30px;
+        padding: 30px;
+        background-image: url('banner.jpg');
+        background-repeat: no-repeat;
+        background-size: 40%;
+        background-position: 90% 70%;
+        background-color: $color-white;
+
+        @include lg {
+          flex-direction: column;
+          background-size: 70%;
+          background-position: 120% 100%;
+        }
+        @include xs {
+          flex-direction: row;
+          flex-wrap: wrap;
+          padding-bottom: 150px;
+          background-size: 350px;
+          background-position: 40% 100%;
+        }
+      }
+  }
